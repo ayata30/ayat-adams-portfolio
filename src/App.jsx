@@ -1,23 +1,43 @@
-import { useState } from 'react'
 
+import Hero from "./components/Hero"
+import ProjectCard from "./components/ProjectCard"
+import ExperienceCard from "./components/ExperienceCard"
 import './App.css'
+
 
 function App() {
 
 
   return (
+    <>
+       <Hero/>
     
-       <>
-       <h1> Ayat Adams </h1>
-       <h3> Computer Science Student | Aspiring Software Engineer</h3>
-       <p> Building full-stack projects with React, Python, and other technologies.</p>
+        <section className="projects">
+          <ProjectCard
+        title="F1 Trackside Dashboard"
+        description="Live Formula 1 dashboard using the OpenF1 API."
+        tech="React • OpenF1 API"
+        github="..."
+        demo="..."
+        />
+
+        <ProjectCard
+        title="Al Kashif"
+        description="Quran audio recognition application."
+        tech="React • FastAPI • MongoDB"
+        github="..."
+        demo="..."
+        />
+        </section>
 
 
-
-       <button> View Projects</button>
-       <button> View Resume </button>
-       <button> View Experience</button>
-   
+       <section className="experience">
+        <ExperienceCard 
+            title="Intuit Product Expert"
+            date="Feb 2026 – Present  "
+            description="• Helped customers... • Resolved technical issues... teammates"
+            />  
+            </section>
        </>
    
   )
