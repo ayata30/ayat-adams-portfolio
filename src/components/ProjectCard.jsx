@@ -10,8 +10,10 @@ function ProjectCard(props){
                 <p> {props.github} </p>
                 <p> {props.demo}</p>
             </div>
+            
      
         </>
+        
 
 
     )
