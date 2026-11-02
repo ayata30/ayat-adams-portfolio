@@ -2,74 +2,86 @@
 import Hero from "./components/Hero"
 import ProjectCard from "./components/ProjectCard"
 import ExperienceCard from "./components/ExperienceCard"
+import Navbar from "./components/Navbar"
 import './App.css'
 
 
 function App() {
-
-
   return (
     <>
-       <Hero/>
+      <Navbar/>
+      <main>
+       <Hero />
     
-        <section className="projects">
-          <ProjectCard
-        title="F1 Trackside Dashboard"
-        description="Live Formula 1 dashboard using the OpenF1 API."
-        tech="React, Vite, JavaScript, OpenF1 (REST) API "
-        github="..."
-      
+        <section id="projects" className="projects">
+          <h2>Featured Projects</h2>
+
+      <div className="project-grid">
+         <ProjectCard
+          title="F1 Trackside Dashboard"
+          description="Live Formula 1 dashboard using the OpenF1 API."
+          tech="React, Vite, JavaScript, REST API "
+          github="https://github.com/ayata30/f1-trackside"
+          demo="https://f1-trackside-zeta.vercel.app/"
         />
+     
+       
 
         <ProjectCard
-        title="QuranDetect"
-        description="Quran audio recognition application."
-        tech=" React, Python, FastAPI,  Google Cloud, Docker, FastApi"             
-        github="..."
-        demo="https://qurandetect.vercel.app/"
+          title="QuranDetect"
+          description="Quran audio recognition application."
+          tech=" React, Python, FastAPI,  Google Cloud, Docker, FastApi"             
+          github="https://github.com/ayata30/quran2"
+          demo="https://qurandetect.vercel.app/"
+           />
+        </div>
+      </section>
+        
 
-        />
-        </section>
+        
+       <section id="experience" className="experience">
+          <h2>Experience</h2>
 
-
-       <section className="experience">
+    
         <ExperienceCard 
             title="Intuit Product Expert"
             date="Feb 2026 – April 2026  "
-            description="Troubleshot technical, authentication, and account-related issues for 15+ TurboTax users daily
-            •Achievied a 70% customer satisfaction score.
-•Supported 100+ users weekly through TurboTax workflows and tax filing processes
-"
+            description={[
+            "Troubleshot technical, authentication, and account-related issues for 15+ TurboTax users daily,",
+            "Achievied a 70% customer satisfaction score.",
+            "Supported 100+ users weekly through TurboTax workflows and tax filing processes."
+              ]}
             />  
             </section>
 
       <section className="experience">
         <ExperienceCard 
-            title="IT Intern"
+            title="City of El Paso Public Library — IT Intern"
             date="July 2025 – September 2025  "
-            description="Supported students and staff with computer, software, and technical issues
-• Assisted with computer lab operations and troubleshooting
-• Provided technical support and helped maintain a productive lab environment"
+            description={[
+              "Supported students and staff with computer, software, and technical issues",
+              "Assisted with computer lab operations and troubleshooting",
+              "Provided technical support and helped maintain a productive lab environment."
+            ]}
             />  
             </section>
 
              <section className="experience">
-        <ExperienceCard 
+            <ExperienceCard 
             title="Ixlayer Extern"
             date=" November 2024 - December 2024 "
-            description="Supported students and staff with computer, software, and technical issues
-• Assisted with computer lab operations and troubleshooting
-• Provided technical support and helped maintain a productive lab environment"
+            description={[
+              "comming soon"
+            ]}
             />  
             </section>
 
-
-
-            
+           
+      </main>     
        </>
    
-  )
+  );
 }
 
-export default App
+export default App;
 

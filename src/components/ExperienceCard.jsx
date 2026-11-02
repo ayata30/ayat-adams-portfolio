@@ -1,18 +1,21 @@
 function ExperienceCard(props){
     return(
         <>
+            <article  className="experience-card">
+                <h3>{props.title}</h3>
+                   <p className="experience-date">{props.date}</p>
 
-            <div  className="experience-card">
-                   <p>{props.title}</p>
-                    <p>{props.date}</p>
-                   <p>{props.description}</p> 
-
-            </div>
+                   <ul>
+                    {props.description.map((item, index) => (
+                    <li key={index}>{item}</li>
+                    ))}
+                </ul>
+            </article>
 
      
         </>
     )
 }
-export default ExperienceCard
+export default ExperienceCard;
 
    
