@@ -42,17 +42,24 @@ section {
 
 /* Projects */
 .projects {
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
+  max-width: 1100px;
+   margin: 35px auto 0;
+  align-items: stretch;
 }
 
 .project-card {
   background: #1e293b;
-  padding: 25px;
+  display: flex;
+  flex-direction: column;
+ min-width: 0;
+  padding: 30px;
   border-radius: 12px;
   border: 1px solid #334155;
   transition: transform 0.2s ease, border-color 0.2s ease;
+  margin-bottom: 50px;
 }
 
 .project-card:hover {
@@ -62,6 +69,9 @@ section {
 
 .project-card h3 {
   margin-bottom: 12px;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #f8fafc;
 }
 
 .project-card p {
@@ -73,7 +83,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 15px;
 }
 
 .project-links a {
@@ -81,6 +90,12 @@ section {
   text-decoration: none;
 }
 
+.project-tech {
+  color: #a9d8ed !important;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
 /* Experience */
 .experience {
   display: flex;

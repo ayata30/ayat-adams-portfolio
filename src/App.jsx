@@ -14,13 +14,13 @@ function App() {
        <Hero />
     
         <section id="projects" className="projects">
-          <h2>Featured Projects</h2>
+          <h1>Featured Projects</h1>
 
       <div className="project-grid">
          <ProjectCard
           title="F1 Trackside Dashboard"
-          description="Live Formula 1 dashboard using the OpenF1 API."
-          tech="React, Vite, JavaScript, REST API "
+          description="A Formula 1 dashboard for race results, driver standings, and more."
+          tech="React, Vite, JavaScript, OpenF1 API "
           github="https://github.com/ayata30/f1-trackside"
           demo="https://f1-trackside-zeta.vercel.app/"
         />
@@ -29,8 +29,8 @@ function App() {
 
         <ProjectCard
           title="QuranDetect"
-          description="Quran audio recognition application."
-          tech=" React, Python, FastAPI,  Google Cloud, Docker, FastApi"             
+          description="A Shazam inspired application that identifies Quranic verses from audio."
+          tech=" React, Python, FastAPI,  Google Cloud, Docker, FastAPI"             
           github="https://github.com/ayata30/quran2"
           demo="https://qurandetect.vercel.app/"
            />
@@ -40,7 +40,7 @@ function App() {
 
         
        <section id="experience" className="experience">
-          <h2>Experience</h2>
+          <h1>Experience</h1>
 
     
         <ExperienceCard 
@@ -66,15 +66,7 @@ function App() {
             />  
             </section>
 
-             <section className="experience">
-            <ExperienceCard 
-            title="Ixlayer Extern"
-            date=" November 2024 - December 2024 "
-            description={[
-              "comming soon"
-            ]}
-            />  
-            </section>
+           
 
            
       </main>     
